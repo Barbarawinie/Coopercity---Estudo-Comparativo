@@ -48,7 +48,7 @@ export default function App() {
                 <img
                   src={logos.arkos}
                   alt="Arkos Benefícios"
-                  className="h-12 w-auto object-contain"
+                  className="h-16 sm:h-20 md:h-24 w-auto object-contain max-h-24"
                 />
                 <div className="hidden sm:block">
                   <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-[#0E6135]/10 text-[#0E6135] border border-[#0E6135]/20">
