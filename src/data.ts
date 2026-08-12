@@ -6,8 +6,8 @@ import {
   PdfDocument
 } from './types';
 
-export const ARKOS_LOGO_SVG = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 450 160'><g transform='translate(10,10)'><path d='M 55,15 L 5,125 L 30,125 L 55,65 L 80,125 L 105,125 Z' fill='%23000000'/><path d='M 30,125 C 30,95 80,95 80,125 C 70,110 40,110 30,125 Z' fill='%230E6135'/><rect x='47' y='93' width='16' height='8' rx='2' fill='%230E6135'/><text x='110' y='100' font-family='Arial, sans-serif' font-weight='900' font-size='78' fill='%230E6135' letter-spacing='-1'>ARKOS</text><text x='115' y='138' font-family='Arial, sans-serif' font-weight='400' font-size='32' fill='%23000000' letter-spacing='5'>benefícios</text></g></svg>`;
-export const PLENA_LOGO_SVG = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 160'><defs><linearGradient id='pGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%230066B3'/><stop offset='50%25' stop-color='%238E248D'/><stop offset='100%25' stop-color='%2300A896'/></linearGradient></defs><path d='M 130,40 C 180,10 260,10 270,35 C 280,60 200,80 150,55 C 110,35 50,30 60,55 C 70,80 120,60 130,40 Z' fill='none' stroke='url(%23pGrad)' stroke-width='10' stroke-linecap='round'/><text x='10' y='135' font-family='Arial, sans-serif' font-weight='700' font-size='80' fill='%230B4893' letter-spacing='-2'>Plena</text><text x='190' y='90' font-family='Arial, sans-serif' font-weight='300' font-size='30' fill='%23808285'>Saúde</text></svg>`;
+export const ARKOS_LOGO_SVG = '/logos/arkos.png';
+export const PLENA_LOGO_SVG = '/logos/plena.png';
 export const PORTO_LOGO_SVG = '/logos/porto.svg';
 export const SULAMERICA_LOGO_SVG = '/logos/sulamerica.svg';
 export const COOPERCITYSP_LOGO_SVG = '/logos/coopercitysp.svg';
