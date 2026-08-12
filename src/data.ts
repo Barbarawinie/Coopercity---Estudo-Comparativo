@@ -6,8 +6,8 @@ import {
   PdfDocument
 } from './types';
 
-export const ARKOS_LOGO_SVG = '/logos/arkos.png';
-export const PLENA_LOGO_SVG = '/logos/plena.png';
+export const ARKOS_LOGO_SVG = '/logos/arkos.svg';
+export const PLENA_LOGO_SVG = '/logos/plena.svg';
 export const PORTO_LOGO_SVG = '/logos/porto.svg';
 export const SULAMERICA_LOGO_SVG = '/logos/sulamerica.svg';
 export const COOPERCITYSP_LOGO_SVG = '/logos/coopercitysp.svg';
