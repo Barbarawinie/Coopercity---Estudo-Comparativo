@@ -7,11 +7,6 @@ import {
   COOPERCITYSP_LOGO_SVG,
   HIGHLIGHT_CARDS,
   PRICING_TABLE,
-  TOTAL_PLENA,
-  TOTAL_PORTO,
-  TOTAL_SULAMERICA,
-  ORIGINAL_SULAMERICA,
-  ECONOMY_SULAMERICA,
   OPERATOR_DIFFERENTIALS,
   LOCAL_NETWORK_OPERATORS,
   BOARD_DECISION_BOXES,
@@ -152,8 +147,8 @@ export default function App() {
                   : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
               }`}
             >
-              <i className="fa-solid fa-chart-pie"></i>
-              Tabela Financeira & Valores
+              <i className="fa-solid fa-table"></i>
+              Tabela Per Capita
             </button>
 
             <button
@@ -189,7 +184,7 @@ export default function App() {
           </div>
         </nav>
 
-        {/* SECTION 3: FINANCIAL DASHBOARD & PER CAPITA PRICING TABLE */}
+        {/* SECTION 3: PER CAPITA PRICING TABLE */}
         {(activeTab === 'all' || activeTab === 'finance') && (
           <section id="section-finance" className="space-y-6 scroll-mt-32">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
@@ -198,7 +193,7 @@ export default function App() {
                   Seção Financeira
                 </span>
                 <h2 className="text-2xl font-bold text-[#1A1A1A] mt-2">
-                  Demonstrativo de Investimento Mensal e Tabela Per Capita
+                  Tabela de Preços Per Capita por Faixa Etária
                 </h2>
                 <p className="text-sm text-slate-600">
                   Comparativo direto de investimento por faixa etária entre Plena Saúde, Porto Saúde e SulAmérica Saúde
@@ -214,108 +209,6 @@ export default function App() {
                   onChange={e => setSearchTerm(e.target.value)}
                   className="w-full pl-9 pr-3 py-2 bg-white text-xs border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0E6135] shadow-2xs"
                 />
-              </div>
-            </div>
-
-            {/* Summary Metric Cards Above Table */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* PLENA SAÚDE Metric Card */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm relative overflow-hidden">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={logos.plena}
-                      alt="Plena Saúde"
-                      className="h-10 w-auto object-contain"
-                    />
-                    <div>
-                      <h3 className="text-base font-bold text-[#991B1B]">PLENA SAÚDE</h3>
-                      <p className="text-xs text-slate-500 font-medium">Plano Atual Contratado</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-red-50/50 rounded-xl p-4 border border-red-100">
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">
-                    Total Faturado Mensal (45 Vidas)
-                  </span>
-                  <div className="text-2xl sm:text-3xl font-black text-[#1A1A1A] tracking-tight">{TOTAL_PLENA}</div>
-                  <p className="text-xs font-semibold text-slate-600 mt-2 flex items-center gap-1.5">
-                    <i className="fa-solid fa-users text-[#991B1B]"></i>
-                    Base atual: 45 Vidas
-                  </p>
-                </div>
-              </div>
-
-              {/* PORTO SAÚDE Metric Card */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm relative overflow-hidden">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={logos.porto}
-                      alt="Porto Saúde"
-                      className="h-8 sm:h-9 w-auto object-contain max-h-9"
-                    />
-                    <div>
-                      <h3 className="text-base font-bold text-[#004080]">PORTO SAÚDE</h3>
-                      <p className="text-xs text-slate-500 font-medium">Prata Pro - Regional 30% Copar</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-blue-50/50 rounded-xl p-4 border border-blue-100">
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">
-                    Total Mensal Proposta (31 Vidas)
-                  </span>
-                  <div className="text-2xl sm:text-3xl font-black text-[#1A1A1A] tracking-tight">{TOTAL_PORTO}</div>
-                  <p className="text-xs font-semibold text-slate-600 mt-2 flex items-center gap-1.5">
-                    <i className="fa-solid fa-users text-[#004080]"></i>
-                    Base proposta: 31 Vidas
-                  </p>
-                </div>
-              </div>
-
-              {/* SULAMÉRICA SAÚDE Metric Card */}
-              <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm relative overflow-hidden">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <img
-                      src={logos.sulamerica}
-                      alt="SulAmérica Saúde"
-                      className="h-8 sm:h-9 w-auto object-contain max-h-9"
-                    />
-                    <div>
-                      <h3 className="text-base font-bold text-[#E65100]">SULAMÉRICA SAÚDE</h3>
-                      <p className="text-xs text-slate-500 font-medium">Direto Nacional - Enf 30% Copar</p>
-                    </div>
-                  </div>
-                  <span className="px-2.5 py-1 bg-emerald-100 text-emerald-800 text-[11px] font-extrabold rounded-full border border-emerald-300 shadow-2xs">
-                    -16% Negociado
-                  </span>
-                </div>
-
-                <div className="bg-orange-50/60 rounded-xl p-4 border border-orange-100">
-                  <div className="flex items-baseline justify-between">
-                    <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-1">
-                      Total Mensal Proposta (31 Vidas)
-                    </span>
-                    <span className="text-xs line-through text-slate-400 font-medium">
-                      {ORIGINAL_SULAMERICA}
-                    </span>
-                  </div>
-                  <div className="text-2xl sm:text-3xl font-black text-[#1A1A1A] tracking-tight">{TOTAL_SULAMERICA}</div>
-
-                  <p className="text-xs font-semibold text-slate-600 mt-2 flex items-center gap-1.5">
-                    <i className="fa-solid fa-users text-[#E65100]"></i>
-                    Base proposta: 31 Vidas
-                  </p>
-
-                  <div className="mt-2 pt-2 border-t border-orange-200/60 flex flex-wrap items-center justify-between text-xs gap-1.5">
-                    <span className="font-bold text-[#E65100] bg-orange-100/80 px-2 py-0.5 rounded-md text-[11px]">
-                      Economia de {ECONOMY_SULAMERICA}
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -377,22 +270,6 @@ export default function App() {
                       </tr>
                     ))}
                   </tbody>
-                  <tfoot>
-                    <tr className="bg-slate-900 text-white text-sm font-bold border-t-2 border-slate-900">
-                      <td className="py-4 px-6 font-extrabold tracking-wide">
-                        TOTAL MENSAL DA PROPOSTA
-                      </td>
-                      <td className="py-4 px-6 text-right font-black text-red-300 text-base">
-                        {TOTAL_PLENA} <span className="text-xs font-normal text-slate-300 block">(45 Vidas)</span>
-                      </td>
-                      <td className="py-4 px-6 text-right font-black text-blue-300 text-base">
-                        {TOTAL_PORTO} <span className="text-xs font-normal text-slate-300 block">(31 Vidas)</span>
-                      </td>
-                      <td className="py-4 px-6 text-right font-black text-orange-300 text-base">
-                        {TOTAL_SULAMERICA} <span className="text-xs font-normal text-slate-300 block">(31 Vidas)</span>
-                      </td>
-                    </tr>
-                  </tfoot>
                 </table>
               </div>
             </div>
