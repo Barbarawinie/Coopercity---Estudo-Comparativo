@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 160">
-  <defs>
-    <linearGradient id="plenaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0066B3"/>
-      <stop offset="50%" stop-color="#8E248D"/>
-      <stop offset="100%" stop-color="#00A896"/>
-    </linearGradient>
-  </defs>
-  <!-- Símbolo Infinito/Laço -->
-  <path d="M 120,40 C 170,10 250,10 260,35 C 270,60 190,80 140,55 C 100,35 40,30 50,55 C 60,80 110,60 120,40 Z" fill="none" stroke="url(#plenaGrad)" stroke-width="8" stroke-linecap="round"/>
-  <!-- Texto Plena -->
-  <text x="10" y="130" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="75" fill="#0B4893" letter-spacing="-2">Plena</text>
-  <!-- Texto Saúde -->
-  <text x="180" y="85" font-family="'Segoe UI', Roboto, sans-serif" font-weight="300" font-size="28" fill="#808285">Saúde</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160"><defs><linearGradient id="pGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0066B3"/><stop offset="50%" stop-color="#8E248D"/><stop offset="100%" stop-color="#00A896"/></linearGradient></defs><path d="M 130,40 C 180,10 260,10 270,35 C 280,60 200,80 150,55 C 110,35 50,30 60,55 C 70,80 120,60 130,40 Z" fill="none" stroke="url(#pGrad)" stroke-width="10" stroke-linecap="round"/><text x="10" y="135" font-family="Arial, sans-serif" font-weight="700" font-size="80" fill="#0B4893" letter-spacing="-2">Plena</text><text x="190" y="90" font-family="Arial, sans-serif" font-weight="300" font-size="30" fill="#808285">Saúde</text></svg>

@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
-  <g transform="translate(20, 20)">
-    <!-- Ícone Símbolo A Estilizado -->
-    <path d="M 60,20 L 10,130 L 32,130 L 60,70 L 88,130 L 110,130 Z" fill="#000000"/>
-    <path d="M 35,130 C 35,100 85,100 85,130 C 75,115 45,115 35,130 Z" fill="#0E6135"/>
-    <rect x="52" y="98" width="16" height="8" rx="2" fill="#0E6135"/>
-    <!-- Texto ARKOS -->
-    <text x="115" y="105" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="82" fill="#0E6135" letter-spacing="-1">ARKOS</text>
-    <!-- Texto benefícios -->
-    <text x="120" y="145" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="34" fill="#000000" letter-spacing="6">benefícios</text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 160"><g transform="translate(10,10)"><path d="M 55,15 L 5,125 L 30,125 L 55,65 L 80,125 L 105,125 Z" fill="#000000"/><path d="M 30,125 C 30,95 80,95 80,125 C 70,110 40,110 30,125 Z" fill="#0E6135"/><rect x="47" y="93" width="16" height="8" rx="2" fill="#0E6135"/><text x="110" y="100" font-family="Arial, sans-serif" font-weight="900" font-size="78" fill="#0E6135" letter-spacing="-1">ARKOS</text><text x="115" y="138" font-family="Arial, sans-serif" font-weight="400" font-size="32" fill="#000000" letter-spacing="5">benefícios</text></g></svg>

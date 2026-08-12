@@ -1,5 +1,4 @@
 import { useState, ChangeEvent } from 'react';
-import { ArkosLogoInline, PlenaLogoInline } from './components/Logos';
 import {
   ARKOS_LOGO_SVG,
   PLENA_LOGO_SVG,
@@ -143,15 +142,11 @@ export default function App() {
             {/* Header Left: Arkos Benefícios Logo */}
             <div className="flex items-center gap-4 w-full md:w-auto justify-between md:justify-start">
               <div className="flex items-center gap-4">
-                {logos.arkos && logos.arkos.startsWith('data:') ? (
-                  <img
-                    src={logos.arkos}
-                    alt="Arkos Benefícios"
-                    className="h-12 sm:h-14 md:h-16 w-auto object-contain max-h-20"
-                  />
-                ) : (
-                  <ArkosLogoInline className="h-12 sm:h-14 md:h-16 w-auto" />
-                )}
+                <img
+                  src={logos.arkos}
+                  alt="Arkos Benefícios"
+                  className="h-12 w-auto object-contain"
+                />
                 <div className="hidden sm:block">
                   <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-bold bg-[#0E6135]/10 text-[#0E6135] border border-[#0E6135]/20">
                     <i className="fa-solid fa-award mr-1.5 text-xs text-[#0E6135]"></i>
@@ -336,15 +331,11 @@ export default function App() {
               <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm relative overflow-hidden">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    {logos.plena && logos.plena.startsWith('data:') ? (
-                      <img
-                        src={logos.plena}
-                        alt="Plena Saúde"
-                        className="h-8 sm:h-9 w-auto object-contain max-h-9"
-                      />
-                    ) : (
-                      <PlenaLogoInline className="h-8 sm:h-10 w-auto" />
-                    )}
+                    <img
+                      src={logos.plena}
+                      alt="Plena Saúde"
+                      className="h-10 w-auto object-contain"
+                    />
                     <div>
                       <h3 className="text-base font-bold text-[#991B1B]">PLENA SAÚDE</h3>
                       <p className="text-xs text-slate-500 font-medium">Plano Atual Contratado</p>
@@ -457,11 +448,11 @@ export default function App() {
                       <th className="py-3.5 px-6">Faixa Etária</th>
                       <th className="py-3.5 px-6 text-right bg-red-50/50 text-[#991B1B]">
                         <div className="flex items-center justify-end gap-2">
-                          {logos.plena && logos.plena.startsWith('data:') ? (
-                            <img src={logos.plena} alt="Plena Saúde" className="h-6 w-auto object-contain" />
-                          ) : (
-                            <PlenaLogoInline className="h-6 w-auto" />
-                          )}
+                          <img
+                            src={logos.plena}
+                            alt="Plena Saúde"
+                            className="h-10 w-auto object-contain"
+                          />
                           <span>Plena Saúde (Atual)</span>
                         </div>
                       </th>
@@ -619,15 +610,11 @@ export default function App() {
                     <div className="p-6 space-y-5">
                       {/* Header */}
                       <div className="flex items-center justify-between gap-3 pb-4 border-b border-slate-100">
-                        {op.id === 'plena' && (!logos.plena || !logos.plena.startsWith('data:')) ? (
-                          <PlenaLogoInline className="h-8 sm:h-9 w-auto" />
-                        ) : (
-                          <img
-                            src={opLogo}
-                            alt={op.logoAlt}
-                            className="h-8 sm:h-9 w-auto max-w-[130px] object-contain"
-                          />
-                        )}
+                        <img
+                          src={opLogo}
+                          alt={op.logoAlt}
+                          className="h-8 sm:h-9 w-auto max-w-[130px] object-contain"
+                        />
                         <span className={`px-3 py-1 rounded-full text-xs font-extrabold border ${op.badgeColor}`}>
                           {op.totalHospitals}
                         </span>
@@ -778,15 +765,11 @@ export default function App() {
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      {pdf.id.includes('plena') && (!logos.plena || !logos.plena.startsWith('data:')) ? (
-                        <PlenaLogoInline className="h-7 sm:h-8 w-auto" />
-                      ) : (
-                        <img
-                          src={pdfLogo}
-                          alt={pdf.logoAlt}
-                          className="h-7 sm:h-8 w-auto max-w-[120px] object-contain"
-                        />
-                      )}
+                      <img
+                        src={pdfLogo}
+                        alt={pdf.logoAlt}
+                        className="h-7 sm:h-8 w-auto max-w-[120px] object-contain"
+                      />
                       <i className="fa-solid fa-file-pdf text-red-600 text-2xl"></i>
                     </div>
                     <h3 className="text-sm font-bold text-[#1A1A1A] leading-snug">
@@ -814,15 +797,11 @@ export default function App() {
         {/* SECTION 8: INSTITUTIONAL FOOTER */}
         <footer className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 text-center space-y-6">
           <div className="flex justify-center items-center gap-4 flex-wrap">
-            {logos.arkos && logos.arkos.startsWith('data:') ? (
-              <img
-                src={logos.arkos}
-                alt="Arkos Benefícios"
-                className="h-12 sm:h-14 w-auto object-contain max-h-16"
-              />
-            ) : (
-              <ArkosLogoInline className="h-12 sm:h-14 w-auto" />
-            )}
+            <img
+              src={logos.arkos}
+              alt="Arkos Benefícios"
+              className="h-12 w-auto object-contain"
+            />
             <span className="text-slate-300 font-light text-xl">|</span>
             <div className="flex flex-col items-start text-left">
               <span className="font-black text-slate-800 text-sm tracking-wider">COOPERCITYSP</span>
