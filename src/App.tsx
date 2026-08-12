@@ -242,10 +242,20 @@ export default function App() {
                         </div>
                       </th>
                       <th className="py-3.5 px-6 text-right bg-blue-50/50 text-[#004080]">
-                        Porto Saúde - Prata Pro
+                        <div className="flex items-center justify-end gap-2 flex-wrap">
+                          <span>Porto Saúde - Prata Pro</span>
+                          <span className="px-2 py-0.5 text-[10px] bg-blue-100 text-blue-800 rounded-md font-extrabold border border-blue-200">
+                            -13% Negociado
+                          </span>
+                        </div>
                       </th>
                       <th className="py-3.5 px-6 text-right bg-orange-50/50 text-[#E65100]">
-                        SulAmérica Saúde - Direto Nac. (-16%)
+                        <div className="flex items-center justify-end gap-2 flex-wrap">
+                          <span>SulAmérica Saúde - Direto Nac.</span>
+                          <span className="px-2 py-0.5 text-[10px] bg-orange-100 text-orange-800 rounded-md font-extrabold border border-orange-200">
+                            -16% Negociado
+                          </span>
+                        </div>
                       </th>
                     </tr>
                   </thead>

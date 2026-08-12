@@ -27,23 +27,23 @@ export const HIGHLIGHT_CARDS: HighlightCard[] = [
   },
   {
     id: '3',
-    title: 'Condição Comercial Conquistada',
-    description: 'Negociação de até -16% de redução comercial aplicada sobre a tabela padrão.',
+    title: 'Condições Especiais Negociadas',
+    description: 'Condições comerciais negociadas com reduções especiais aplicadas sobre as tabelas padrão (-13% Porto Saúde e -16% SulAmérica).',
     icon: 'fa-tags'
   }
 ];
 
 export const PRICING_TABLE: PricingRow[] = [
-  { ageGroup: '0 a 18 anos', plenaPrice: 'R$ 139,99', portoPrice: 'R$ 187,25', sulamericaPrice: 'R$ 166,16', plenaValue: 139.99, portoValue: 187.25, sulamericaValue: 166.16 },
-  { ageGroup: '19 a 23 anos', plenaPrice: 'R$ 163,99', portoPrice: 'R$ 227,08', sulamericaPrice: 'R$ 207,70', plenaValue: 163.99, portoValue: 227.08, sulamericaValue: 207.70 },
-  { ageGroup: '24 a 28 anos', plenaPrice: 'R$ 163,99', portoPrice: 'R$ 273,93', sulamericaPrice: 'R$ 257,54', plenaValue: 163.99, portoValue: 273.93, sulamericaValue: 257.54 },
-  { ageGroup: '29 a 33 anos', plenaPrice: 'R$ 163,99', portoPrice: 'R$ 313,60', sulamericaPrice: 'R$ 285,87', plenaValue: 163.99, portoValue: 313.60, sulamericaValue: 285.87 },
-  { ageGroup: '34 a 38 anos', plenaPrice: 'R$ 163,99', portoPrice: 'R$ 339,79', sulamericaPrice: 'R$ 305,89', plenaValue: 163.99, portoValue: 339.79, sulamericaValue: 305.89 },
-  { ageGroup: '39 a 43 anos', plenaPrice: 'R$ 183,99', portoPrice: 'R$ 350,92', sulamericaPrice: 'R$ 354,82', plenaValue: 183.99, portoValue: 350.92, sulamericaValue: 354.82 },
-  { ageGroup: '44 a 48 anos', plenaPrice: 'R$ 183,99', portoPrice: 'R$ 419,18', sulamericaPrice: 'R$ 424,16', plenaValue: 183.99, portoValue: 419.18, sulamericaValue: 424.16 },
-  { ageGroup: '49 a 53 anos', plenaPrice: 'R$ 183,99', portoPrice: 'R$ 451,26', sulamericaPrice: 'R$ 497,11', plenaValue: 183.99, portoValue: 451.26, sulamericaValue: 497.11 },
-  { ageGroup: '54 a 58 anos', plenaPrice: 'R$ 183,99', portoPrice: 'R$ 557,57', sulamericaPrice: 'R$ 591,81', plenaValue: 183.99, portoValue: 557.57, sulamericaValue: 591.81 },
-  { ageGroup: '59+ anos', plenaPrice: 'R$ 463,99', portoPrice: 'R$ 937,23', sulamericaPrice: 'R$ 996,91', plenaValue: 463.99, portoValue: 937.23, sulamericaValue: 996.91 }
+  { ageGroup: '0 a 18 anos', plenaPrice: 'R$ 139,99', portoPrice: 'R$ 162,91', sulamericaPrice: 'R$ 166,16', plenaValue: 139.99, portoValue: 162.91, sulamericaValue: 166.16 },
+  { ageGroup: '19 a 23 anos', plenaPrice: 'R$ 163,99', portoPrice: 'R$ 197,56', sulamericaPrice: 'R$ 207,70', plenaValue: 163.99, portoValue: 197.56, sulamericaValue: 207.70 },
+  { ageGroup: '24 a 28 anos', plenaPrice: 'R$ 163,99', portoPrice: 'R$ 238,32', sulamericaPrice: 'R$ 257,54', plenaValue: 163.99, portoValue: 238.32, sulamericaValue: 257.54 },
+  { ageGroup: '29 a 33 anos', plenaPrice: 'R$ 163,99', portoPrice: 'R$ 272,83', sulamericaPrice: 'R$ 285,87', plenaValue: 163.99, portoValue: 272.83, sulamericaValue: 285.87 },
+  { ageGroup: '34 a 38 anos', plenaPrice: 'R$ 163,99', portoPrice: 'R$ 295,62', sulamericaPrice: 'R$ 305,89', plenaValue: 163.99, portoValue: 295.62, sulamericaValue: 305.89 },
+  { ageGroup: '39 a 43 anos', plenaPrice: 'R$ 183,99', portoPrice: 'R$ 305,30', sulamericaPrice: 'R$ 354,82', plenaValue: 183.99, portoValue: 305.30, sulamericaValue: 354.82 },
+  { ageGroup: '44 a 48 anos', plenaPrice: 'R$ 183,99', portoPrice: 'R$ 364,69', sulamericaPrice: 'R$ 424,16', plenaValue: 183.99, portoValue: 364.69, sulamericaValue: 424.16 },
+  { ageGroup: '49 a 53 anos', plenaPrice: 'R$ 183,99', portoPrice: 'R$ 392,60', sulamericaPrice: 'R$ 497,11', plenaValue: 183.99, portoValue: 392.60, sulamericaValue: 497.11 },
+  { ageGroup: '54 a 58 anos', plenaPrice: 'R$ 183,99', portoPrice: 'R$ 485,09', sulamericaPrice: 'R$ 591,81', plenaValue: 183.99, portoValue: 485.09, sulamericaValue: 591.81 },
+  { ageGroup: '59+ anos', plenaPrice: 'R$ 463,99', portoPrice: 'R$ 815,39', sulamericaPrice: 'R$ 996,91', plenaValue: 463.99, portoValue: 815.39, sulamericaValue: 996.91 }
 ];
 
 export const TOTAL_PLENA = 'R$ 9.343,55';
@@ -56,11 +56,15 @@ export const OPERATOR_DIFFERENTIALS: OperatorDifferential[] = [
   {
     operator: 'PORTO SAÚDE',
     planName: 'Prata Pro - Regional',
-    highlightTag: 'Solução de Gestão Ocupacional & SST',
+    highlightTag: 'Solução de Gestão Ocupacional & SST (-13% Negociado)',
     logoAlt: 'Porto Saúde',
     logoUrl: PORTO_LOGO_SVG,
     accentColor: '#004080',
     differentials: [
+      {
+        title: 'Condição Comercial Especial (-13%)',
+        description: 'Tabela per capita negociada com redução comercial exclusiva de 13% sob a tabela padrão da operadora.'
+      },
       {
         title: 'Saúde Ocupacional & SST Incluso',
         description: 'Gestão de SST, exames admissionais/periódicos, PCMSO, PGR e eSocial inclusos no valor.'
@@ -78,11 +82,15 @@ export const OPERATOR_DIFFERENTIALS: OperatorDifferential[] = [
   {
     operator: 'SULAMÉRICA SAÚDE',
     planName: 'Direto Nacional',
-    highlightTag: 'Livre Atendimento e Cobertura em Todo o Brasil',
+    highlightTag: 'Livre Atendimento e Cobertura Nacional (-16% Negociado)',
     logoAlt: 'SulAmérica Saúde',
     logoUrl: SULAMERICA_LOGO_SVG,
     accentColor: '#E65100',
     differentials: [
+      {
+        title: 'Condição Comercial Especial (-16%)',
+        description: 'Tabela per capita negociada com redução comercial exclusiva de 16% sob a tabela padrão da operadora.'
+      },
       {
         title: 'Abrangência Geográfica Nacional',
         description: 'Cobertura integral no Brasil, ideal para colaboradores e motoristas que viajam fora de SP.'
